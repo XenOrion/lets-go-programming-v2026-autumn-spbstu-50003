@@ -8,7 +8,7 @@ func main() {
 		return
 	}
 
-	for department := 0; department < departments; department++ {
+	for range departments {
 		var employees int
 		if _, err := fmt.Scan(&employees); err != nil {
 			return
@@ -17,7 +17,7 @@ func main() {
 		minTemp := 15
 		maxTemp := 30
 
-		for employee := 0; employee < employees; employee++ {
+		for range employees {
 			var (
 				operator    string
 				temperature int
